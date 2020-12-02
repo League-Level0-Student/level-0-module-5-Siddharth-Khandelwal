@@ -37,10 +37,13 @@ char letter = Hi.charAt(i);
 			
 			}
 
+goofyName+=letter;
+
+
 }			
 				// 6. Even characters should be made uppercase and odd characters made lowercase
 				//    HINT: use Character.toUpperCase() or Character.toLowerCase()
-	
+	JOptionPane.showMessageDialog(null, goofyName);
 			
 				// 7. ADD the char to the end of the goofyName String
 
