@@ -14,7 +14,7 @@ public static void main(String[] args) {
 	}
 
 	}
-	JOptionPane.showMessageDialog(null, "Your number was prime."); 
+	JOptionPane.showMessageDialog(null, "Your number is prime."); 
 	}
 }
 
