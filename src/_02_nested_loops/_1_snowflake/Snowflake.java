@@ -8,7 +8,7 @@ import org.jointheleague.graphical.robot.Robot;
 public class Snowflake {
 	
 	public static void main(String[] args) {
-
+int size = 50;
 		// #1. Make a new Robot
 Robot nugget = new Robot();
 nugget.hide();
@@ -22,15 +22,19 @@ nugget.penDown();
 nugget.setSpeed(100000);
 
 		// #5. use a for loop below to do everything ( #6, #7, #8, #9, #12, #13, #14 ) 6 times (use i as the counter)
-for (int i = 0; i < 6; i++) {
+for (int y = 0; y < 50; y++) {
 	
+
+for (int i = 0; i < 6; i++) {
+	 
 
 			
 			// #6. Set the pen color to black
 
 			nugget.setPenColor(Color.RED);
 			// #7. move the robot by 50
-nugget.move(50);
+
+			nugget.move(size);
 			
 			// #8. turn the robot to the right by 60
 			nugget.turn(60);
@@ -54,12 +58,13 @@ else {
 		nugget.turn(-60);
 					
 					// #11. move the robot by 50 (play the start button)
-					nugget.move(50);
+					nugget.move(size);
 			}
 			// #14. set the pen color to black
 nugget.setPenColor(Color.BLACK);
 }
-		
+size -=1;
+}
 	}
 
 }
