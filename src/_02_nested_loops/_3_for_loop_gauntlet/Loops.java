@@ -1,6 +1,6 @@
 package _02_nested_loops._3_for_loop_gauntlet;
 
-
+import javax.swing.JOptionPane;
 
 public class Loops {
 public static void main(String[] args) {
@@ -42,16 +42,37 @@ for (int e = 0; e <= 777; e++) {
 	System.out.println(e);	
 	}
 }
+int j = 0;
+	for (int i = 2010; i <= 2019; i++) {
+		System.out.println( "In "+i+" I was "+j+" years old.");
+			j++;
+			
+		}
+	System.out.println("In 2020 I am 10 years old.");
+
+
+
+for (int i = 0; i < 3; i++) {
+	System.out.println(i);
+	System.out.println(i);
+	System.out.println(i);
 	
-}
-
-
-
-
-
-
-
-
-
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+}
+
