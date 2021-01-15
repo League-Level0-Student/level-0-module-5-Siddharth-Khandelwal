@@ -1,5 +1,7 @@
 package _04_practice._1_skill_practice;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPractice {
@@ -59,10 +61,16 @@ for (int i = 1; i < 100; i++) {
 		}
 
 		void skill3() { // Get a random number that is less than 20 and print it to the console
-
-
-
-		// Get another random number that is less than 10 and print it to the console
+int number = 0;
+			int Number = 0;
+Random ran = new Random();
+Number = ran.nextInt(11);
+		number = ran.nextInt(21);
+		System.out.print(number);
+		System.out.print("-"+Number+"=");
+		int answer = number-Number;
+		System.out.println(answer);
+// Get another random number that is less than 10 and print it to the console
 
 
 
@@ -73,9 +81,13 @@ for (int i = 1; i < 100; i++) {
 		}
 
 		void skill4() { // In a pop-up, ask the user for the city they live in
-
-
-
+String City = JOptionPane.showInputDialog("What city do you live in?");
+if(City.equalsIgnoreCase("San Diego")) {
+	JOptionPane.showMessageDialog(null, "You live in America's Finest City!");
+}
+else {
+	JOptionPane.showMessageDialog(null, "Move to San Diego.");
+}
 		// If they answered "San Diego", tell them they live in America's Finest City
 
 
@@ -85,15 +97,21 @@ for (int i = 1; i < 100; i++) {
 
 
 		// Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation."
-
-
+int Cars = 2;
+if (Cars == 0){
+	JOptionPane.showMessageDialog(null, "I bet you use public transportation.");
+}
 
 		// If there is 1 car, use a pop-up to display the make/model of the car
+if(Cars == 1) {
+JOptionPane.showMessageDialog(null, "Audi Q7");	
+}
 
-
-
+int tires = Cars*4;
 		// If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them.
-
+if(Cars > 1) {
+	JOptionPane.showMessageDialog(null, "There are"+tires+"among your cars!");
+}
 
 
 		}
